@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>Ma première page</title> <!-- Titre de l’onglet -->
+</head>
+<body>
+
+    <header>
+    {% block header %}
+    
+    {% endblock header %}
+
+    </header>
+
+
+     <h1> {% block content %}
+        
+    {% endblock  %} 
+    </h1>
+
+    <h2> {% block h2 %}
+        
+    {% endblock %} </h2>
+
+
+    <ol> {% block list %}
+        
+        {% endblock list %} 
+    </ol>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>lorem iptsum</li>
+            </footer>
+    

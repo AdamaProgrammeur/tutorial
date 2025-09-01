@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>Ma première page</title> <!-- Titre de l’onglet -->
+</head>
+<body>
+
+<h1>Liste des produits sont</h1>
+{% for p in produits %} 
+    {% if p is empty %}
+
+      <p>Aucun produit introuvable</p>
+    {% endif %}
+  
+    <ul>
+        <li>nom de produit: {{p.nom}}--- et le prix: {{p.prix}} </li>
+
+    </ul>
+    
+{% endfor %}
+
+</body> 
+</html>
